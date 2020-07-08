@@ -1,5 +1,9 @@
-// Entry point for project
+import Vue from 'vue';
+import DocappMainView from '@/view/DocappMainView';
 
-export default (function () {
-  document.getElementById("app").innerHTML = "<h1>Hello from Docapp</h1>";
-}());
+var app = new Vue({
+  el: '#app',
+  components: {
+    DocappMainView,
+  }
+});
